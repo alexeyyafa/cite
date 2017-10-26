@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ya olya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(232, 213, 255, 0.01);
+
+}
+p {
+	font-family: Arial;
+}
+p.bio {
+	text-align: center;
+    width: 100%;
+    text-indent: 50px;
+}
+ul {
+    list-style-type: none;
+    background: linear-gradient(45deg, rgb(232, 66, 102), rgb(232, 213, 255));
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+li {
+    display: inline-block;
+    float: left;
+	font-size: 16px;
+	text-align: center;
+    padding: 20px 0;
+}
+li a {
+    text-decoration: none;
+    padding: 20px;
+    color: white; 
+}
+a:hover {
+	color: black;	
+}
+iframe {
+    width: 50%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="#"><img src="http://www.downloadclipart.net/medium/14553-brown-violin-clip-art.png" alt="violin" style="width:35px;height:15px;"></a></li>
+  <li><a href="#me">Обо мне</a></li>
+  <li><a href="#gallery">Галерея</a></li>
+  <li><a href="#contact">Контактные данные</a></li>
+</ul>
+<!-- main page  -->
+<div style= "max-width:2000px;margin-top:55px;">
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides">
+    <img src="https://pp.userapi.com/c637519/v637519908/61a57/XggzVSRntn4.jpg" alt="republic" style="width:100%">
+    <div class="display">
+      <h3>Клуб "Re:public"</h3>
+      <p><b>Требьют группы "Король и шут"</b></p>   
+    </div>
+  </div>
+  <div class="mySlides">
+    <img src="https://pp.userapi.com/c637519/v637519908/61a77/qPw8cbC64yI.jpg" alt="republic2" style="width:100%">
+    <div class="display">
+      <h3>Клуб "Re:public"</h3>
+      <p><b>Клуб "Re:public"</b></p>    
+    </div>
+  </div>
+  <div class="mySlides">
+    <img src="https://pp.userapi.com/c836229/v836229581/61f75/-_1wdUoFMvQ.jpg" alt="concert" style="width:100%">
+    <div class="display">
+      <h3>Бельгия</h3>
+      <p><b>Концерт</b></p>    
+    </div>
+  </div>
+</div>
+  
+    <!-- The About me Section -->
+<div style="padding:50px;margin-top:60px;" id="me">
+    <h2 style="color:rgb(163, 133, 167);">ОБО МНЕ</h2>
+    <p><i>Я ОЛЯ</i></p>
+    <p class="bio">Бла бла я играю бла бла оля хихихиххихи аываыаывжа ываывавыа оля ывдаывдадывдадывдаываы ываыв ва  бла блабла бла я играю бла бла оля хихихиххихи аываыаывжа ываывавыа оля ывдаывдадывдадывдаываы ываыв ва  бла блабла бла я играю бла бла оля хихихиххихи аываыаывжа ываывавыа оля ывдаывдадывдадывдаываы ываыв ва  бла блабла бла я играю бла бла оля хихихиххихи аываыаывжа ываывавыа оля ывдаывдадывдадывдаываы ываыв ва  бла</p>
+    <div>
+      <div>
+        <img src="https://pp.userapi.com/c637927/v637927735/5971f/0zdL9v8jmdE.jpg" alt="Random Name" style="width:50%;height:50%">
+      </div>
+    </div>
+  </div>
+
+    <!-- The Gallery Section -->
+    <div style="padding:50px;margin-top:60px;" id="gallery">
+     <h2 style="color:rgb(163, 133, 167);">ГАЛЕРЕЯ</h2>
+<iframe width="500" height="500" src="https://www.youtube.com/embed/jSrfIir5LlA">
+</iframe>
+<iframe width="500" height="500" src="https://www.youtube.com/embed/kx2Ode0KDfw">
+</iframe>
+<iframe width="500" height="500" src="https://www.youtube.com/embed/-ekT8bPEGQA">
+</iframe>
+</div>
+
+    <!-- The Contact Section -->
+ <div style="padding:50px;margin-top:60px;" id="contact">
+    <h2 style="color:rgb(163, 133, 167);">КОНТАКТНЫЕ ДАННЫЕ</h2>
+    <p><i>Заинтерисовались? Оставьте сообщение</i></p>
+     <p>Беларусь, Минск</p>
+     <p>Телефон: 999999999</p>
+     <p>Email: mail@mail.com</p> 
+     <a href="https://vk.com/id146563735"><img src="https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/vkontakte-256.png" alt="vk" style="width:25px;height:25px"></a>
+ </div>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);    
+}
+</script>
+</body>
+</html>
